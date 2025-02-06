@@ -1,0 +1,11 @@
+version: "3"
+services:
+    
+    nifi_docker:
+        image: apache/nifi:1.13.2
+        restart: always
+        container_name: nifi_docker
+        ports:
+            - 8181:8181
+        environment:
+            - NIFI_WEB_HTTP_PORT=8181
