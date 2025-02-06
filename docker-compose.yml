@@ -9,3 +9,6 @@ services:
             - 8181:8181
         environment:
             - NIFI_WEB_HTTP_PORT=8181
+
+        volumes:
+            - ./nifi/conf:/opt/nifi/nifi-1.13.2/conf
