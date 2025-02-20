@@ -11,4 +11,4 @@ services:
             - NIFI_WEB_HTTP_PORT=8181
 
         volumes:
-            - ./nifi/conf:/opt/nifi/nifi-1.13.2/conf
+            - ./nifi/data:/opt/nifi/nifi-current/data
